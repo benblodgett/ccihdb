@@ -1,0 +1,251 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 26, 2022 at 03:36 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ccih_hsi`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c33`
+--
+
+CREATE TABLE `c33` (
+  `sno` int(2) NOT NULL,
+  `rp` varchar(35) NOT NULL,
+  `q1_1` int(5) DEFAULT NULL,
+  `q1_2` int(5) DEFAULT NULL,
+  `q2_1` int(5) DEFAULT NULL,
+  `q2_2` int(5) DEFAULT NULL,
+  `q3_1` int(5) DEFAULT NULL,
+  `q3_2` int(5) DEFAULT NULL,
+  `mov` text NOT NULL,
+  `ra` text NOT NULL,
+  `fs` varchar(35) NOT NULL,
+  `cuser` varchar(60) NOT NULL,
+  `cdt` varchar(30) NOT NULL,
+  `uuser` varchar(60) NOT NULL,
+  `udt` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c34`
+--
+
+CREATE TABLE `c34` (
+  `sno` int(2) NOT NULL,
+  `rp` varchar(35) NOT NULL,
+  `q1_1` int(5) DEFAULT NULL,
+  `q1_2` int(5) DEFAULT NULL,
+  `q1_3` int(5) DEFAULT NULL,
+  `q2_1` int(5) DEFAULT NULL,
+  `q2_2` int(5) DEFAULT NULL,
+  `q2_3` int(5) DEFAULT NULL,
+  `mov` text NOT NULL,
+  `ra` text NOT NULL,
+  `fs` varchar(35) NOT NULL,
+  `cuser` varchar(60) NOT NULL,
+  `cdt` varchar(30) NOT NULL,
+  `uuser` varchar(60) NOT NULL,
+  `udt` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c35`
+--
+
+CREATE TABLE `c35` (
+  `sno` int(2) NOT NULL,
+  `rp` varchar(35) NOT NULL,
+  `q1_1_1a` int(3) DEFAULT NULL,
+  `q1_1_1b` int(3) DEFAULT NULL,
+  `q1_1_1c` float(5,2) DEFAULT NULL,
+  `q1_2_1a` int(3) DEFAULT NULL,
+  `q1_2_1b` int(3) DEFAULT NULL,
+  `q1_2_1c` float(5,2) DEFAULT NULL,
+  `q2_1` int(5) DEFAULT NULL,
+  `mov` text NOT NULL,
+  `ra` text NOT NULL,
+  `fs` varchar(35) NOT NULL,
+  `cuser` varchar(60) NOT NULL,
+  `cdt` varchar(30) NOT NULL,
+  `uuser` varchar(60) NOT NULL,
+  `udt` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c36`
+--
+
+CREATE TABLE `c36` (
+  `sno` int(2) NOT NULL,
+  `rp` varchar(35) NOT NULL,
+  `q1_1` int(5) DEFAULT NULL,
+  `q1_2_1a` int(3) DEFAULT NULL,
+  `q1_2_1b` int(3) DEFAULT NULL,
+  `q1_2_1c` float(5,2) DEFAULT NULL,
+  `q2_1` int(5) DEFAULT NULL,
+  `q2_2_2a` int(3) DEFAULT NULL,
+  `q2_2_2b` int(3) DEFAULT NULL,
+  `q2_2_2c` float(5,2) DEFAULT NULL,
+  `q3_1` int(5) DEFAULT NULL,
+  `q3_2` int(5) DEFAULT NULL,
+  `mov` text NOT NULL,
+  `ra` text NOT NULL,
+  `fs` varchar(35) NOT NULL,
+  `cuser` varchar(60) NOT NULL,
+  `cdt` varchar(30) NOT NULL,
+  `uuser` varchar(60) NOT NULL,
+  `udt` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c37`
+--
+
+CREATE TABLE `c37` (
+  `sno` int(2) NOT NULL,
+  `rp` varchar(35) NOT NULL,
+  `q1_1` int(5) DEFAULT NULL,
+  `q1_2` int(5) DEFAULT NULL,
+  `q1_3` int(5) DEFAULT NULL,
+  `mov` text NOT NULL,
+  `ra` text NOT NULL,
+  `fs` varchar(35) NOT NULL,
+  `cuser` varchar(60) NOT NULL,
+  `cdt` varchar(30) NOT NULL,
+  `uuser` varchar(60) NOT NULL,
+  `udt` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `c38`
+--
+
+CREATE TABLE `c38` (
+  `sno` int(2) NOT NULL,
+  `rp` varchar(35) NOT NULL,
+  `q1_1` int(5) DEFAULT NULL,
+  `q1_2` int(5) DEFAULT NULL,
+  `q1_3` int(5) DEFAULT NULL,
+  `q2_1` int(5) DEFAULT NULL,
+  `mov` text NOT NULL,
+  `ra` text NOT NULL,
+  `fs` varchar(35) NOT NULL,
+  `cuser` varchar(60) NOT NULL,
+  `cdt` varchar(30) NOT NULL,
+  `uuser` varchar(60) NOT NULL,
+  `udt` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `c33`
+--
+ALTER TABLE `c33`
+  ADD PRIMARY KEY (`sno`);
+
+--
+-- Indexes for table `c34`
+--
+ALTER TABLE `c34`
+  ADD PRIMARY KEY (`sno`);
+
+--
+-- Indexes for table `c35`
+--
+ALTER TABLE `c35`
+  ADD PRIMARY KEY (`sno`);
+
+--
+-- Indexes for table `c36`
+--
+ALTER TABLE `c36`
+  ADD PRIMARY KEY (`sno`);
+
+--
+-- Indexes for table `c37`
+--
+ALTER TABLE `c37`
+  ADD PRIMARY KEY (`sno`);
+
+--
+-- Indexes for table `c38`
+--
+ALTER TABLE `c38`
+  ADD PRIMARY KEY (`sno`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `c33`
+--
+ALTER TABLE `c33`
+  MODIFY `sno` int(2) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `c34`
+--
+ALTER TABLE `c34`
+  MODIFY `sno` int(2) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `c35`
+--
+ALTER TABLE `c35`
+  MODIFY `sno` int(2) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `c36`
+--
+ALTER TABLE `c36`
+  MODIFY `sno` int(2) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `c37`
+--
+ALTER TABLE `c37`
+  MODIFY `sno` int(2) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `c38`
+--
+ALTER TABLE `c38`
+  MODIFY `sno` int(2) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
